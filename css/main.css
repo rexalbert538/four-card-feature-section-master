@@ -1,0 +1,145 @@
+/* Importing fonts */
+@font-face {
+  font-family: 'Poppins';
+  src: url(../fonts/Poppins-Regular.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --padding: 2em;
+  --neutral-one: hsl(234, 12%, 34%);
+  --neutral-two: hsl(229, 6%, 66%);
+}
+
+h1, h2, p {
+  margin-bottom: 0.6em;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  color: var(--neutral-one);
+}
+
+p {
+  color: var(--neutral-two);
+}
+
+body {
+  height: 100%;
+  font-size: 15px;
+  font-family: 'Poppins',sans-serif;
+  text-align: center;
+}
+
+.container {
+  padding: var(--padding);
+}
+
+.container .title {
+  font-size: 1.6rem;
+  font-weight: 200;
+  margin-top: 1.6em;
+  color: var(--neutral-two);
+}
+
+.container .title .small-title {
+  display: block;
+  font-weight: 700;
+  color: var(--neutral-one);
+  font-size: 1.65rem;
+}
+
+.container .body {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.grid .card:nth-child(2) {
+  border-top: 3px solid #ea5353;
+}
+
+.grid .card:nth-child(3) {
+  border-top: 3px solid #fcaf4a;
+}
+
+.grid .card:nth-child(4) {
+  border-top: 3px solid #549ef2;
+}
+
+.card {
+  --padding: 2em;
+  width: 100%;
+  margin-top: 2em;
+  -webkit-box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  padding: var(--padding);
+  border-radius: 5px;
+  border-top: 3px solid #45d3d3;
+  text-align: left;
+}
+
+.card .card__title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.card .card__body {
+  font-size: 0.75rem;
+  margin-bottom: 3em;
+}
+
+.card .card-img {
+  text-align: right;
+}
+
+@media screen and (min-width: 700px) {
+  .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 137px 137px 137px 137px;
+        grid-template-rows: 137px 137px 137px 137px;
+    grid-column-gap: 20px;
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+  .grid .card:nth-child(1) {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    grid-row: 2/4;
+  }
+  .grid .card:nth-child(2) {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/3;
+  }
+  .grid .card:nth-child(3) {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    grid-row: 3/5;
+  }
+  .grid .card:nth-child(4) {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    grid-row: 2/4;
+  }
+}
+/*# sourceMappingURL=main.css.map */
