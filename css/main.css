@@ -102,6 +102,16 @@ body {
 }
 
 @media screen and (min-width: 700px) {
+  
+  .container .title,
+  .container .body{
+    font-size: 1.6rem;
+  }
+  
+  .container .title .small-title {
+    font-size: 1.65rem;
+  }
+  
   .grid {
     display: -ms-grid;
     display: grid;
