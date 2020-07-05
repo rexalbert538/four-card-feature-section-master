@@ -103,14 +103,22 @@ body {
 
 @media screen and (min-width: 700px) {
   
-  .container .title,
-  .container .body{
+  .container .title {
     font-size: 1.6rem;
   }
   
   .container .title .small-title {
     font-size: 1.65rem;
   }
+  
+  .container .body {
+   max-width: 100%;
+  }
+  
+  .card .card__title {
+   font-size: 1.35rem;
+  }
+  
   
   .grid {
     display: -ms-grid;
